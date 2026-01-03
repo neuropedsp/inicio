@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neuropedsp - Neuropsicopedagogia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo-container">
+            <img src="logo.jpg" alt="Neuropedsp Logo" class="logo">
+        </div>
+        <button onclick="showSection('inicio')">Início</button>
+        <button onclick="showSection('trabalho')">Nosso Trabalho</button>
+        <button onclick="showSection('etapas')">Etapas do Atendimento</button>
+        <button onclick="showSection('espaco')">Nosso Espaço</button>
+        <button onclick="showSection('contato')">Contato</button>
+    </nav>
+
+    <main id="content">
+        <section id="inicio" class="active">
+            <h2>Seja bem-vindo!</h2>
+            <p>Nossa missão é transformar a jornada educativa em um processo leve, assertivo e humanizado. Utilizamos os fundamentos da <strong>Neuropsicopedagogia</strong> para compreender como o cérebro processa informações e como as emoções influenciam a retenção do conhecimento.</p>
+                
+            <div class="publico-alvo">
+                <h4>Para quem trabalhamos?</h4>
+                <ul class="lista-publico">
+                    <li><i class="fas fa-child"></i> <strong>Crianças:</strong> Suporte em alfabetização e atrasos escolares.</li>
+                    <li><i class="fas fa-user-graduate"></i> <strong>Adolescentes:</strong> Estratégias de organização e memorização.</li>
+                    <li><i class="fas fa-brain"></i> <strong>Neurodivergentes:</strong> TDAH, Dislexia, TEA e Síndrome de Down.</li>
+                    <li><i class="fas fa-users"></i> <strong>Famílias:</strong> Orientação para suporte no ambiente domiciliar.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="trabalho">
+            <div class="etapas-container">
+                <div class="etapa-item">
+                    <span class="etapa-numero"><i class="fas fa-brain"></i></span>
+                    <p>Avaliação e diagnóstico de dificuldades cognitivas com intervenções personalizadas.</p>
+                </div>
+                <div class="etapa-item">
+                    <span class="etapa-numero"><i class="fas fa-check-circle"></i></span>
+                    <p>Atendimento especializado para TDAH, dislexia, TEA (Autismo) e Síndrome de Down.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="etapas">
+            <div class="etapas-container">
+                <div class="etapa-item">
+                    <span class="etapa-numero">1</span>
+                    <p><strong>Triagem e Anamnese:</strong> Entrevista inicial com a família para compreender o histórico.</p>
+                </div>
+                <div class="etapa-item">
+                    <span class="etapa-numero">2</span>
+                    <p><strong>Avaliação:</strong> Aplicação de testes para identificar habilidades e dificuldades.</p>
+                </div>
+                <div class="etapa-item">
+                    <span class="etapa-numero">3</span>
+                    <p><strong>Devolutiva:</strong> Apresentação dos resultados e entrega do relatório técnico.</p>
+                </div>
+                <div class="etapa-item">
+                    <span class="etapa-numero">4</span>
+                    <p><strong>Intervenção:</strong> Sessões personalizadas focadas no desenvolvimento cognitivo.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="espaco">
+            <div class="galeria-container">
+                <img src="foto1.jpg" alt="Espaço 1" class="img-galeria" onclick="openModal(this.src)">
+                <img src="foto2.jpg" alt="Espaço 2" class="img-galeria" onclick="openModal(this.src)">
+                <img src="foto3.jpg" alt="Espaço 3" class="img-galeria" onclick="openModal(this.src)">
+                <img src="foto4.jpg" alt="Espaço 4" class="img-galeria" onclick="openModal(this.src)">
+                <img src="foto5.jpg" alt="Espaço 5" class="img-galeria" onclick="openModal(this.src)">
+                <img src="foto6.jpg" alt="Espaço 6" class="img-galeria" onclick="openModal(this.src)">
+                <img src="foto7.jpg" alt="Espaço 3" class="img-galeria" onclick="openModal(this.src)">
+                <img src="foto8.jpg" alt="Espaço 4" class="img-galeria" onclick="openModal(this.src)">
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="contato-grid">
+                <div class="contato-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Telefone</span>
+                    <a href="tel:11996910377">(11) 99691-0377</a>
+                </div>
+                <div class="contato-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>E-mail</span>
+                    <a href="mailto:neuropedsp@outlook.com.br">neuropedsp@outlook.com.br</a>
+                </div>
+            </div>
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/neuropedsp" target="_blank" class="btn-social instagram">
+                    <i class="fab fa-instagram"></i> @neuropedsp
+                </a>
+                <a href="https://wa.me/55119966910377" target="_blank" class="btn-whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <div id="modalZoom" class="modal" onclick="closeModal()">
+        <span class="close">×</span>
+        <img class="modal-content" id="imgExpandida">
+    </div>
+
+    <footer>
+        <p><a href="https://maps.google.com" target="_blank">Av. Ceci, 2211 - Jardim Planalto - São Paulo/SP</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
